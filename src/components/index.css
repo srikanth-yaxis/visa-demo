@@ -1,0 +1,107 @@
+.visa-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.visa-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333; /* Dark gray */
+    font-weight: 600;
+}
+
+.visa-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333; /* Dark gray */
+}
+
+.visa-form input[type="text"],
+.visa-form input[type="email"],
+.visa-form input[type="date"],
+.visa-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.visa-form input:focus,
+.visa-form select:focus {
+    border-color: #d9534f; /* Red accent */
+    box-shadow: 0px 0px 5px rgba(217, 83, 79, 0.5);
+    outline: none;
+}
+
+.visa-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d; /* Dark gray */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.visa-form button:hover {
+    background-color: #495057; /* Slightly darker gray */
+    transform: scale(1.02);
+}
+
+.visa-form button:focus {
+    outline: 2px solid #d9534f; /* Red focus outline */
+    outline-offset: 2px;
+}
+
+/* Selected option styles */
+.visa-form .selected {
+    border: 1px solid #d9534f !important; /* Red border for selected */
+    background-color: rgba(217, 83, 79, 0.05);
+    color: #d9534f !important;
+    font-weight: bold;
+}
+
+/* Dropdown styling */
+.visa-form select {
+    appearance: none;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .visa-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .visa-form h2 {
+        font-size: 20px;
+    }
+
+    .visa-form input,
+    .visa-form select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .visa-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
